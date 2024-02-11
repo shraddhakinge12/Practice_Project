@@ -4,10 +4,13 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "/home/nitesh/Selenium/SeleniumMavenProject/Features/Login.feature",
+@CucumberOptions(features = ".//Features/Customers.feature",
         glue = "stepDefinition",
         dryRun = false,
-        monochrome = true)
+        monochrome = true,
+        plugin = {
+            "pretty", "html:test-output.html"
+        })
 
 public class TestRunner {
 }

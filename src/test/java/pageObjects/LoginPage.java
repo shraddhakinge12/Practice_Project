@@ -29,6 +29,10 @@ public class LoginPage {
      @CacheLookup
      WebElement Remember_me;
 
+     @FindBy(how = How.XPATH, using = "//a[normalize-space()='Logout']")
+     @CacheLookup
+     WebElement Logout_Label;
+
 
      public void Email(String uname){
           EmailTxt.clear();
@@ -37,8 +41,16 @@ public class LoginPage {
      public void Password(String pwd){
          PasswordTxt.clear();
          PasswordTxt.sendKeys(pwd);
+
      }
      public void SubmitButton(){
          Login_Button.click();
      }
+
+     public void LogOut(){
+         Logout_Label.click();
+     }
+
+
+
 }
