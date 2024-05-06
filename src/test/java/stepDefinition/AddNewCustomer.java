@@ -29,7 +29,6 @@ public class AddNewCustomer extends BaseClass{
     public void user_click_on_add_new_button() throws InterruptedException {
         addCust.clickOnAddNewButton();
         Thread.sleep(2000);
-
     }
     @Then("User can view Add new Customer page")
     public void user_can_view_add_new_customer_page() {

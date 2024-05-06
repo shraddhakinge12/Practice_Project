@@ -9,8 +9,7 @@ import org.junit.runner.RunWith;
         dryRun = false,
         monochrome = true,
         plugin = {
-            "pretty", "html:test-output.html"
+            "pretty", "html:Reports/test-output.html"
         })
-
 public class TestRunner {
 }
